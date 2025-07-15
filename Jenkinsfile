@@ -3,7 +3,7 @@ pipeline {
     agent { label "docker-agent" }
 
     stages {
-        stage("Hello"){
+        stage("Hello World"){
             steps{
                 script{
                     hello()
