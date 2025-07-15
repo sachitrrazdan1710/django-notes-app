@@ -162,7 +162,7 @@ CORS_ORIGIN_ALLOW_ALL = True
             mkdir -p ~/.docker/cli-plugins/
             curl -SL https://github.com/docker/compose/releases/download/v2.24.6/docker-compose-linux-x86_64 -o ~/.docker/cli-plugins/docker-compose
             chmod +x ~/.docker/cli-plugins/docker-compose
-            docker compose up -d
+          docker compose down && docker compose up -d
         '''
     }
 }
